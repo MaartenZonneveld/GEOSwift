@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
   name: "GEOSwift",
   products: [
-    .library(name: "GEOSwift", targets: ["GEOSwift"])
+    .library(name: "GEOSwift", type: .dynamic, targets: ["GEOSwift"])
   ],
   dependencies: [
     .package(url: "https://github.com/GEOSwift/geos.git", from: "5.0.0")
